@@ -140,7 +140,7 @@ if (false !== $crons) {
 								$handle=opendir($source);                    
 								while (false !== ($entry = readdir($handle))) {
 									if (is_file("$source/$entry")) {
-										print "\t\t$source/$entry\n";
+										print "$date\t" . $cron[0] . "\t" . $cron[1] . "\t$source/$entry\n";
 									}
 								}
 							}
