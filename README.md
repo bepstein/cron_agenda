@@ -7,6 +7,7 @@ http://stackoverflow.com/questions/321494/calculate-when-a-cron-job-will-be-exec
 
 Here is a sample from my laptop:
 
+```
 [2]ep:~/ep/code/cron_agenda$ date
 Sun Feb  1 22:41:22 EST 2015
 [2]ep:~/ep/code/cron_agenda$ sudo php cron_agenda.php | head -20
@@ -31,6 +32,7 @@ Sun Feb  1 22:41:22 EST 2015
 1:30    */10 * * * *    root    /usr/lib64/sa/sa1 1 1
 1:40    */10 * * * *    root    /usr/lib64/sa/sa1 1 1
 ....
+```
 
 The first column represents the time of the day in 23:59 format.
 The second column is the frequency that is being used by cron for the job.
